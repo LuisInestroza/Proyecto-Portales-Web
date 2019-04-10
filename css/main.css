@@ -103,19 +103,70 @@ textarea {
    ========================================================================== */
 
 
+/* Estilos del HTML principales */
+:root{
 
+    /* Estilo de letra */
+    --fuente-principal: 'Viga', sans-serif;
 
+    /* Colores principales */
+    --colorMoradoOscuro: #161529;
+    --colorMoradoClaro: #313746;
+    --colrNegro: #000000;
+    --colorGris: #B8B8B6;
+    --colorGrisBlanco: #EDEDEA;
+    --colorNaranja: #FF2F00;
+    --colorBlanco: #FFFFFF;
 
+}
 
+html{
 
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
 
+*,* :before, *after{
+    box-sizing: inherit;
+}
 
+body{
 
+    font-family: var(--fuente-principal);
+}
 
+.header{
+    background-color: var(--colorMoradoOscuro);
+}
+.header nav{
+    
+    padding: 1rem 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+@media(min-width: 768px){
+    .header nav{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
 
+.header nav a{
+    color: var(--colorBlanco);
+    text-decoration: none;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
 
-
+@media (min-width: 768px) {
+    .header nav a {
+        margin-bottom: 0;
+    }
+}
 
  /* ==========================================================================
    Helper classes
