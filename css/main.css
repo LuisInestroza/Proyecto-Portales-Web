@@ -135,7 +135,7 @@ body{
     font-family: var(--fuente-principal);
 }
 
-/* Diseño deñ header */
+/* Diseño del header */
 
 header{
 
@@ -169,8 +169,10 @@ header label:hover{
     
 }
 
+
 .menu li{
     flex-grow: 1;
+    border-right: 1px solid #FFFFFF;
 }
 
 .menu li:hover{
@@ -178,13 +180,41 @@ header label:hover{
 
 }
 
+
+
 .menu li a{
     display: block;
     padding: 15px 15px;
     color: var(--colorBlanco);
     text-decoration: none;
+    text-align: center;
     font-size: 3rem;
    
+}
+
+/* Diseño del fas de menu */
+.fa-bars{
+    color: var(--colorBlanco);
+    font-size: 3rem;
+}
+
+/* Estilo del submenu */
+.menu li ul{
+    background: var(--colorMoradoOscuro);
+    position: absolute;
+    color: var(--colorBlanco);
+    font-size: 2rem;
+    width: 5%;
+    display: none;
+    min-width: 140px;
+    text-align: center;
+    
+   
+}
+
+.menu li:hover > ul{
+    display: block;
+    
 }
 
 @media(max-width: 768px){
@@ -195,8 +225,8 @@ header label:hover{
     .menu{
         position: absolute;
         background: var(--colorMoradoOscuro);
-        width: 100%;
-        margin-left: -100%;
+        width: 70%;
+        margin-left: -70%;
         transition: all 1s;
     }
 
@@ -209,19 +239,71 @@ header label:hover{
         border-top: 1px solid #FFFFFF;
     }
 
+    .menu li a{
+        text-align: left;
+    }
+
     #btnMenu:checked ~ .menu{
         margin: 0;
     }
 }
 
 
+/* Estilo del hero */
+.hero{
+    /*background-image: url(../img/peliculas.jpeg);*/
+    height: 300px;
+    background-position: top center;
+    background-size: cover;
+    background: var(--colorGris);
+}
 
 
+/* Formulario de busqueda */
 
+.busqueda{
+    padding: 50px;
+    float: right;
+    width: 600px;
+    margin: 0 auto;
+}
 
+fieldset{
+    background: var(--colorBlanco);
+    border: 1px solid #333333;
+    border-radius: 5px;
+    padding: 0 0 0 -40px;   
+    
+}
+input, button{
+    position: relative;
+    padding: 0;
+}
+input{
+    font-size: 2rem;
+    width: 529px;
+    height:40px;
+    border: none;
 
+}
+button{
+    width: 66px;
+    height: 40px;
+    border: none;
+    background: #333;
+}
 
+.fa-search{
+    color: var(--colorBlanco);
+    font-size: 2rem;
+}
 
+@media (min-width: 768px)
+{
+    .busqueda{
+        flex-direction: column;
+    }
+}
 
  /* ==========================================================================
    Helper classes
