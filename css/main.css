@@ -337,31 +337,6 @@ button{
     
 }
 
-/* Copyrigt y redes sociales */
-
-.sociales h3{
-    font-size: 2.5rem;
-}
-.sociales {
-    text-align: center;
-}
-.sociales a {
-    color:var(--colrNegro);
-    font-size: 3rem;
-    margin-right: 2rem;
-}
-
-.sociales a:last-child {
-    margin-right: 0;
-}
-.copyright {
-    background-color: var(--colorNaranja);
-    color: var(--colrNegro);
-    padding: 1rem 0;
-    margin: 2rem 0 0 0;
-    text-align: center;
-    font-size: 3rem;
-}
 
 /* SLIDER SERIES */
 
@@ -406,6 +381,31 @@ button{
 
 }
 
+/* Copyrigt y redes sociales */
+
+.sociales h3{
+    font-size: 2.5rem;
+}
+.sociales {
+    text-align: center;
+}
+.sociales a {
+    color:var(--colrNegro);
+    font-size: 3rem;
+    margin-right: 2rem;
+}
+
+.sociales a:last-child {
+    margin-right: 0;
+}
+.copyright {
+    background-color: var(--colorNaranja);
+    color: var(--colrNegro);
+    padding: 1rem 0;
+    margin: 2rem 0 0 0;
+    text-align: center;
+    font-size: 3rem;
+}
 
 
 
