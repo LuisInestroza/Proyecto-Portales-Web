@@ -208,6 +208,7 @@ header label:hover{
     display: none;
     min-width: 140px;
     text-align: center;
+    z-index: 100;
     
    
 }
@@ -228,6 +229,7 @@ header label:hover{
         width: 70%;
         margin-left: -70%;
         transition: all 1s;
+        z-index: 100;
     }
 
     .menu ul{
@@ -298,12 +300,7 @@ button{
     font-size: 2rem;
 }
 
-@media (min-width: 768px)
-{
-    .busqueda{
-        flex-direction: column;
-    }
-}
+
 
 
 /* SLIDER (MOVIMIENO DE LAS IMAGENES) */
