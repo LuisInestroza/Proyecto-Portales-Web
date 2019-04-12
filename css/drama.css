@@ -194,7 +194,7 @@ header label:hover{
     }
 }
 
-.pelicula img
+.drama img
 {
     max-width: 15%;
     align-items: left;
@@ -202,10 +202,10 @@ header label:hover{
     
 }
 
-.pelicula 
+.drama 
 {
 
-    background-color: var(--colorGris);
+    background-color:var(--colorGris);
     padding: 1rem;
 }
 
