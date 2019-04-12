@@ -194,7 +194,7 @@ header label:hover{
     }
 }
 
-.pelicula img
+.accion img
 {
     max-width: 15%;
     align-items: left;
@@ -202,7 +202,7 @@ header label:hover{
     
 }
 
-.pelicula 
+.accion 
 {
 
     background-color: var(--colorGris);
