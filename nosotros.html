@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html class = "no-js" lang="">
+<html class="no-js" lang="">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,28 +9,29 @@
     <link rel="manifest" href="site.webmanifest">
     <link rel="apple-touch-icon" href="icon.png">
     <!-- Place favicon.ico in the root directory -->
-    
+
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/registro.css">
-    
+    <link rel="stylesheet" href="css/nosotros.css">
+
     <meta name="theme-color" content="#fafafa">
     <title>Document</title>
 
     <!-- link  de estlo de letra -->
     <link href="https://fonts.googleapis.com/css?family=Viga" rel="stylesheet">
-    
+
     <!-- Links de iconos -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css"
         integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
-    </head>
 </head>
+</head>
+
 <body>
 
 
     <header class="header">
         <input type="checkbox" id="btnMenu">
         <label for="btnMenu"><i class="fas fa-bars"></i></label>
-    
+
         <nav class=menu>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
@@ -45,32 +47,43 @@
                 <li><a href="nosotros.html">Nosotros</a></li>
                 <li><a href="login.html">Iniciar Sesión</a></li>
             </ul>
-    
+
         </nav>
-    
+
     </header>
-    <!-- FORMULARIO -->
-    <div class="registro">
-        <form action="">
-            <h1>Ingresa Tus Datos</h1>
-            <label>Nombres:</label>
-            <input name="nombre" placeholder="Escribe tu nombre" type="text">
-            <label>Apellidos:</label>
-            <input name="apellido" placeholder="Escribe tu apellido" type="text">
-            <label>Correo Electronico:</label>
-            <input name="mail" placeholder="ejemplo@dominio.com" type="text">
-            <label>Contraseña:</label>
-            <input name="password" placeholder="Password" type="text">
-            <label for="fecha">Fecha de nacimiento</label>
-            <input type="date" name="fecha">
-    
-            <div class="botonEnviar">
-                <input name="boton1" type="submit" value="Guardar Datos">
-            </div>
-    
-        </form>
-    
+
+    <div class="nosotros">
+
+        <h1>Sobre Nosotros</h1>
+        <p>Somos una empresa comprometida, ofreciendo lo mejor en peliculas y series nuestros servicios en la rama de la
+        multimedia, queremos colaborar con la mejora de la calidad de vida de nuestros clientes y amigos. Para
+        ofrecer nuestros productos de alta calidad a través de nuestra tienda virtual, seleccionamos los productos que puedan ofrecer
+        más para la entera satisfacción de nuestros clientes. <br><br>
+        
+        La ventaja de nuestros productos, es para suplir las necesidades de los clientes, es uno de los pilares más importantes, que
+        nos motiva a seguir trabajando en pro de la satisfacción de nuestros clientes. Nos preocupamos porque
+        el cliente pueda comprar sus peliculas o series en los tiempos y formas establecidos en la compra, es por eso que trabajamos
+        constante y cuidadosamente en la selección de las mejores series y peliculas de calidad que nos brinden la seguridad de sus comprar</p>
+
     </div>
+
+    <!--  -->
+    <div class="sociales">
+        <h3>Redes <span>sociales</span></h3>
+        <nav class="redes-sociales">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </nav>
+    </div>
+    </div>
+    <p class="copyright">Todos los derechos reservados. &copy; </p>
+    </footer>
+
+    
+
+
+
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
     <script>
         window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
@@ -78,4 +91,5 @@
     </script>
     <script src="https://www.google-analytics.com/analytics.js" async defer></script>
 </body>
+
 </html>
