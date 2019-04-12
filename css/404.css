@@ -1,0 +1,61 @@
+:root{
+
+    /* Estilo de letra */
+    --fuente-principal: 'Viga', sans-serif;
+
+    /* Colores principales */
+    --colorMoradoOscuro: #161529;
+    --colorMoradoClaro: #313746;
+    --colrNegro: #000000;
+    --colorGris: #B8B8B6;
+    --colorGrisBlanco: #EDEDEA;
+    --colorNaranja: #FF2F00;
+    --colorBlanco: #FFFFFF;
+
+}
+
+html {
+    color: #888;
+    display: table;
+    font-family: var(--fuente-principal);
+    height: 100%;
+    text-align: center;
+    width: 100%;
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+    margin: 2em auto;
+    background: var(--colorGrisBlanco);
+}
+
+h1 {
+    color: #555;
+    font-size: 2em;
+    font-weight: 400;
+}
+
+p {
+    text-align: left;
+    width: 280px;
+}
+
+.fa-exclamation-triangle{
+    color: var(--colrNegro);
+    font-size:  10rem;
+}
+
+@media only screen and (max-width: 280px) {
+
+    body, p {
+
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 1.5em;
+        margin: 0 0 0.3em;
+    }
+
+}
