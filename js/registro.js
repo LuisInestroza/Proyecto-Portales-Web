@@ -15,7 +15,7 @@
 
         function verificarCuenta(event) {
             event.preventDefault();
-            if (nombre.value == "" ||.value == "") {
+            if (nombre.value == "" ||apellido.value == "") {
 
                 boton.alert("!Debes de llenar los datos para acceder¡");
 
