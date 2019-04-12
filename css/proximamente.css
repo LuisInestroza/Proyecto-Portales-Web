@@ -171,7 +171,11 @@ header label:hover{
 {
     max-width: 100%;
     align-items: center;
+    
 }
+
+
+
 
 .estreno 
 {
@@ -179,7 +183,10 @@ header label:hover{
     background-color: var(--colorGris);
     padding: 1rem;
 }
-
+.estreno:hover{
+  
+    transform: scale(1.1);
+}
 
 .texto p 
 {
