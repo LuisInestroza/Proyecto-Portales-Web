@@ -1,0 +1,245 @@
+/* Estilos del HTML principales */
+:root{
+
+    /* Estilo de letra */
+    --fuente-principal: 'Viga', sans-serif;
+
+    /* Colores principales */
+    --colorMoradoOscuro: #161529;
+    --colorMoradoClaro: #313746;
+    --colrNegro: #000000;
+    --colorGris: #B8B8B6;
+    --colorGrisBlanco: #EDEDEA;
+    --colorNaranja: #FF2F00;
+    --colorBlanco: #FFFFFF;
+
+}
+
+html{
+
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,* :before, *after{
+    box-sizing: inherit;
+}
+
+body{
+
+    font-family: var(--fuente-principal);
+}
+
+/* Diseño del header */
+
+header{
+
+    width: 100%;
+    background-color: var(--colorMoradoOscuro);
+
+}
+
+#btnMenu{
+    display: none;
+}
+
+header label{
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+
+}
+
+header label:hover{
+    cursor: pointer;
+    background-color: var(--colorMoradoClaro);
+}
+
+.menu ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    
+}
+
+
+.menu li{
+    flex-grow: 1;
+    border-right: 1px solid #FFFFFF;
+}
+
+.menu li:hover{
+    background: var(--colorMoradoClaro);
+
+}
+
+
+
+.menu li a{
+    display: block;
+    padding: 15px 15px;
+    color: var(--colorBlanco);
+    text-decoration: none;
+    text-align: center;
+    font-size: 3rem;
+   
+}
+
+/* Diseño del fas de menu */
+.fa-bars{
+    color: var(--colorBlanco);
+    font-size: 3rem;
+}
+
+/* Estilo del submenu */
+.menu li ul{
+    background: var(--colorMoradoOscuro);
+    position: absolute;
+    color: var(--colorBlanco);
+    font-size: 2rem;
+    width: 5%;
+    display: none;
+    min-width: 140px;
+    text-align: center;
+    
+   
+}
+
+.menu li:hover > ul{
+    display: block;
+    
+}
+
+@media(max-width: 768px){
+    header label{
+        display: block;
+    }
+
+    .menu{
+        position: absolute;
+        background: var(--colorMoradoOscuro);
+        width: 70%;
+        margin-left: -70%;
+        transition: all 1s;
+    }
+
+    .menu ul{
+        flex-direction: column;
+
+    }
+
+    .menu li{
+        border-top: 1px solid #FFFFFF;
+    }
+
+    .menu li a{
+        text-align: left;
+    }
+
+    #btnMenu:checked ~ .menu{
+        margin: 0;
+    }
+}
+
+/* Copyrigt y redes sociales */
+
+.sociales h3{
+    font-size: 2.5rem;
+}
+.sociales {
+    text-align: center;
+}
+.sociales a {
+    color:var(--colrNegro);
+    font-size: 3rem;
+    margin-right: 2rem;
+}
+
+.sociales a:last-child {
+    margin-right: 0;
+}
+.copyright {
+    background-color: var(--colorNaranja);
+    color: var(--colrNegro);
+    padding: 1rem 0;
+    margin: 2rem 0 0 0;
+    text-align: center;
+    font-size: 3rem;
+}
+
+
+/* Lista de peliculas */
+.contenedor 
+{
+    
+    max-width: 1300px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.lista-peliculas
+{
+    
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 2rem;
+}
+
+@media (min-width: 768px) 
+{
+    .lista-peliculas {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.historia img
+{
+    max-width: 15%;
+    align-items: left;
+
+    
+}
+
+.historia 
+{
+
+    background-color:var(--colorGris);
+    padding: 1rem;
+}
+
+
+
+.texto p 
+{
+    
+    color: var(--colrNegro);
+    font-size: 2rem;
+    text-align: justify;
+    font-family:var(--fuente-principal);
+    line-height: 1.2;
+    margin: 1rem 0;
+}
+.texto{
+    float:right;
+    width: 80%;
+}
+.texto .contenido
+{
+
+    
+    display: inline-block;
+    font-size: 3rem;
+    text-align: center;
+}
+
+main h1
+{
+    
+    font-family: var(--fuente-principal);
+    font-size: 3rem;
+    text-align: center;
+    color: var(--colrNegro);
+    padding: 2%;
+}
