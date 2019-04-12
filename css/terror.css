@@ -191,8 +191,14 @@ header label:hover{
 {
     .lista-peliculas {
         grid-template-columns: repeat(1, 1fr);
+        
+    }
+
+    .terror img{
+        width: 15%;
     }
 }
+
 
 .terror img
 {

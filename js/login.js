@@ -10,9 +10,9 @@
 
         function verificarCuenta(event) {
             event.preventDefault();
-            if (correo.value == "" || password.value == "") {
+            if (correo.validity == "" || password.validity == "") {
                 
-                boton.alert("!Debes de llenar los datos para acceder¡");
+                boton1.alert("!Debes de llenar los datos para acceder¡");
 
             }
             else {

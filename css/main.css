@@ -301,9 +301,17 @@ button{
 }
 
 @media(max-width: 400px){
-    .busqueda, .slider, input, button{
-        width: 100%;
-        margin-top: 0;
+    .busqueda{
+        width: 600px;
+    }
+
+    input{
+        width: 529px;
+    height:40px; 
+    }
+    button{
+        width: 66px;
+        height: 40px;
     }
 }
 
@@ -324,7 +332,7 @@ button{
 
 .slider p{
     
-    font-size: 5rem;
+    font-size: 2rem;
     text-align: center;
 }
 
@@ -364,7 +372,7 @@ button{
     text-align: center;
 }
 .sliderSeries p{
-    font-size: 5rem;
+    font-size: 2rem;
     text-align: center;
 }
 .sliderSeries ul{
