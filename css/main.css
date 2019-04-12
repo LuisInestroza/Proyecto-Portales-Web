@@ -254,7 +254,7 @@ header label:hover{
 /* Estilo del hero */
 .hero{
     /*background-image: url(../img/peliculas.jpeg);*/
-    height: 300px;
+    height: 150px;
     background-position: top center;
     background-size: cover;
     background: var(--colorGris);
@@ -300,7 +300,12 @@ button{
     font-size: 2rem;
 }
 
-
+@media(max-width: 400px){
+    .busqueda, .slider, input, button{
+        width: 100%;
+        margin-top: 0;
+    }
+}
 
 
 /* SLIDER (MOVIMIENO DE LAS IMAGENES) */
@@ -311,6 +316,16 @@ button{
     background: var(--colorGrisBlanco);
     margin: auto;
     
+}
+.slider h1{
+    font-size: 5rem;
+    text-align: center;
+}
+
+.slider p{
+    
+    font-size: 5rem;
+    text-align: center;
 }
 
 .slider ul{
@@ -344,6 +359,14 @@ button{
     
 }
 
+.sliderSeries h1{
+    font-size: 5rem;
+    text-align: center;
+}
+.sliderSeries p{
+    font-size: 5rem;
+    text-align: center;
+}
 .sliderSeries ul{
     display: flex;
    
