@@ -155,11 +155,22 @@ header label:hover{
 
     position: relative;
     text-align: justify;
-    height: 200px;
+    margin: 0 0 0 0;
     width: 1000px;
     padding: 80px;
     font-size: 2rem;
     
+}
+
+
+@media (max-width: 0px){
+
+    .nosotros p{
+        width: 1000%;
+        height: 0px;
+        margin: 0 0 0 0;
+    }
+
 }
 
 /* Copyrigt y redes sociales */

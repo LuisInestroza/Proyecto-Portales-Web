@@ -15,14 +15,17 @@
 
         function verificarCuenta(event) {
             event.preventDefault();
-            if (nombre.value == "" ||apellido.value == "") {
+            if (nombre.value == "" ||apellido.value == "" || correo.value =="" || password.value == "" || fecha.value=="") {
 
-                boton.alert("!Debes de llenar los datos para acceder¡");
+                select.boton.alert("!Debes de llenar los datos para acceder¡");
 
             }
             else {
-                var correo = parseInt(correo.value, 10) || 0,
+                var nombre = parseInt(nombre.value, 10) || 0;
+                var apellido = parseInt(apellido.value, 10) || 0;
+                var correo = parseInt(correo.value, 10) || 0;
                 var password = parseInt(password.value, 10) || 0;
+                var fecha = parseInt(fecha.value, 10) || 0;
 
             }
         }
