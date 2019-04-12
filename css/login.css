@@ -1,0 +1,243 @@
+/* Estilos del HTML principales */
+:root{
+
+    /* Estilo de letra */
+    --fuente-principal: 'Viga', sans-serif;
+
+    /* Colores principales */
+    --colorMoradoOscuro: #161529;
+    --colorMoradoClaro: #313746;
+    --colrNegro: #000000;
+    --colorGris: #B8B8B6;
+    --colorGrisBlanco: #EDEDEA;
+    --colorNaranja: #FF2F00;
+    --colorBlanco: #FFFFFF;
+
+}
+
+html{
+
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,* :before, *after{
+    box-sizing: inherit;
+}
+
+body{
+
+    font-family: var(--fuente-principal);
+}
+
+/* Diseño del header */
+
+header{
+
+    width: 100%;
+    background-color: var(--colorMoradoOscuro);
+
+}
+
+#btnMenu{
+    display: none;
+}
+
+header label{
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+
+}
+
+header label:hover{
+    cursor: pointer;
+    background-color: var(--colorMoradoClaro);
+}
+
+.menu ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    
+}
+
+
+.menu li{
+    flex-grow: 1;
+    border-right: 1px solid #FFFFFF;
+}
+
+.menu li:hover{
+    background: var(--colorMoradoClaro);
+
+}
+
+
+
+.menu li a{
+    display: block;
+    padding: 15px 15px;
+    color: var(--colorBlanco);
+    text-decoration: none;
+    text-align: center;
+    font-size: 3rem;
+   
+}
+
+/* Diseño del fas de menu */
+.fa-bars{
+    color: var(--colorBlanco);
+    font-size: 3rem;
+}
+
+/* Estilo del submenu */
+.menu li ul{
+    background: var(--colorMoradoOscuro);
+    position: absolute;
+    color: var(--colorBlanco);
+    font-size: 2rem;
+    width: 5%;
+    display: none;
+    min-width: 140px;
+    text-align: center;
+    
+   
+}
+
+.menu li:hover > ul{
+    display: block;
+    
+}
+
+@media(max-width: 768px){
+    header label{
+        display: block;
+    }
+
+    .menu{
+        position: absolute;
+        background: var(--colorMoradoOscuro);
+        width: 70%;
+        margin-left: -70%;
+        transition: all 1s;
+    }
+
+    .menu ul{
+        flex-direction: column;
+
+    }
+
+    .menu li{
+        border-top: 1px solid #FFFFFF;
+    }
+
+    .menu li a{
+        text-align: left;
+    }
+
+    #btnMenu:checked ~ .menu{
+        margin: 0;
+    }
+}
+
+
+/* Formulario registro */
+
+form 
+{
+    width: 950px;
+    margin: auto;
+    background: var(--colorGris);
+    box-shadow:0 0 0 1px rgba(14,41,57,0.12),0 2px 5px rgba(14,41,57,0.44),inset 0 -1px 2px rgba(14,41,57,0.15);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;
+    padding: 1rem;
+}
+
+label
+{
+    padding: 0.5rem;
+    font-family: var(--fuente-principal);
+    font-size:30px
+}
+
+
+input
+{
+    font-family: 'Heebo', sans-serif;
+    width: 91%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 25px;
+    padding:0.5rem;
+    margin-top:8px;
+    margin-bottom:1px;
+    border:1px solid #cbcbcb;
+    border-radius:5px;
+    box-shadow:inset 0 1px 2px rgba(0,0,0,0.18);
+}
+form h1
+{
+    
+    font-family: var(--fuente-principal);
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 2rem;
+    
+}
+.registro h1
+{
+    
+    text-align: center;
+    color: var(--colrNegro);
+    padding: 20px;
+    font-size: 4rem;
+}
+
+
+
+input[type=submit]
+{
+    background:var(--colorMoradoOscuro);
+    color: var(--colorBlanco);
+    font-size:19px;
+    text-transform: uppercase;
+    width: 25%;
+}
+
+div .botonEnviar
+{
+    padding: 20px;
+    text-align: center; 
+}
+
+div .botonCrearUsuario{
+    padding: 50px;
+    text-align: center;
+    color: var(--colrNegro);
+    background: var(--colorBlanco);
+}
+
+input[type=submit]:hover
+{
+    
+    background: var(--colorMoradoClaro);
+}
+
+
+@media (max-width: 480px)
+{
+    form 
+    {
+        width: 100%;
+    }
+    .botonEnviar{
+        width: 100%;
+    }
+}
