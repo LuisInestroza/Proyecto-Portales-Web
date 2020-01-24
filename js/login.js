@@ -1,10 +1,10 @@
 !function () {
-    "use strict";
+    "use strict"
 
     document.addEventListener('DOMContentLoaded', function () {
         // variables
 
-        var correo = document.getElementById('mail');
+        var correo = document.getElementById('mail')
         var password = document.getElementById('password');
         var boton = document.getElementById('boton');
 
