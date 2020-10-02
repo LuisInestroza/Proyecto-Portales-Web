@@ -4,13 +4,13 @@
     document.addEventListener('DOMContentLoaded', function () {
         // variables
 
-        var correo = document.getElementById('mail')
+        var correo = document.getElementById('mail');
         var password = document.getElementById('password');
         var boton = document.getElementById('boton');
 
         function verificarCuenta(event) {
             event.preventDefault();
-            if (correo.validity == "" || password.validity == "") {
+            if (correo.validity === "" || password.validity === "") {
                 
                 boton1.alert("!Debes de llenar los datos para acceder¡");
 
