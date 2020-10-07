@@ -63,18 +63,18 @@
         <form action="">
             <h1>Ingresa Tus Datos</h1>
             <label>Nombres:</label>
-            <input name="nombre" id = "nombre" placeholder="Escribe tu nombre" type="text">
+            <input name="nombre" id="nombre" placeholder="Escribe tu nombre" type="text">
             <label>Apellidos:</label>
-            <input name="apellido" id = "apellido"placeholder="Escribe tu apellido" type="text">
+            <input name="apellido" id="apellido" placeholder="Escribe tu apellido" type="text">
             <label>Correo Electronico:</label>
-            <input name="mail" id = "Correo"placeholder="ejemplo@dominio.com" type="text">
+            <input name="mail" id="correo" placeholder="ejemplo@dominio.com" type="text">
             <label>Contraseña:</label>
-            <input name="password" id = "password" placeholder="Password" type="text">
+            <input name="password" id="password" placeholder="Password" type="password">
             <label for="fecha" id = "fecha">Fecha de nacimiento</label>
-            <input type="date" name="fecha">
+            <input type="date" name="fecha" id="fecha">
     
             <div class="botonEnviar">
-                <input name="boton1" id = "boton" type="submit" value="Guardar Datos">
+                <input name="boton1" id="boton" type="submit" value="Guardar Datos" onclick="verificarCuenta()">
             </div>
     
         </form>
@@ -98,5 +98,6 @@
         ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
     </script>
     <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+    <script src="./js/registro.js"></script>
 </body>
 </html>

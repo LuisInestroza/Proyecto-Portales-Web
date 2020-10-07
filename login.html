@@ -71,9 +71,9 @@
             <label>Correo Electronico:</label>
             <input name="mail" id="mail" placeholder="ejemplo@dominio.com" type="text" >
             <label>Contraseña:</label>
-            <input name="password" id = "password" placeholder="Password" type="text">
+            <input name="password" id="password" placeholder="Password" type="password">
             <div class="botonEnviar">
-                <input name="boton1" id = "boton" onclick = "getData()" type="submit" value="Iniciar Sesión" >
+                <input name="boton1" id="boton" onclick="verificarCuenta()" type="submit" value="Iniciar Sesión">
             </div>
         </form>
 
@@ -97,6 +97,7 @@
         window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
         ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
     </script>
+    <script src="./js/login.js"></script>
     <script src="https://www.google-analytics.com/analytics.js" async defer></script>
 </body>
 
